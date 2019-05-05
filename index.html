@@ -12,12 +12,24 @@
                 grid-template-rows: 300px 300px;
                 grid-template: filas /columnas
                 */
-                grid-template: 300px 300px/25% 200px 25%;
+                grid-template: 300px 100px 100px/50% 200px 200px;
             }
+
+            
             .item{
                 background: lightblue;
                 padding: 10px;
                 border: solid red;
+            }
+
+            .item:nth-of-type(4){
+                background: blue;
+                overflow: auto;
+                display: grid;
+                grid-template: 50px 50px 50px/ 200px 200px 200px;
+            }
+            .item .item{
+                background: yellow;
             }
         </style>
     </head>
@@ -26,7 +38,13 @@
             <div class="item">Container 1</div>
             <div class="item">Container 2</div>
             <div class="item">Container 3</div>
-            <div class="item">Container 4</div>
+            <div class="item">
+                <div class="item">subtime #1</div>
+                <div class="item">subtime #2</div>
+                <div class="item">subtime #3</div>
+                <div class="item">subtime #4</div>
+                <div class="item">subtime #5</div>
+            </div>
             <div class="item">Container 5</div>
             <div class="item">Container 6</div>
             <div class="item">Container 7</div>
