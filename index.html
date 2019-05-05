@@ -11,13 +11,18 @@
                 /*grid-template-columns: 25% 200px 25%;
                 grid-template-rows: 300px 300px;
                 grid-template: filas /columnas
+                fr -> Unidad de medida divide en tres partes iguales equivalente a 100
+                auto: -> Hace distribucion de ancho dependiendo el contenido del elemento
+                repeat(cantidad columas, valor)
+                minmax(min, max)
                 */
-                grid-template: 300px 100px 100px/50% 200px 200px;
+
+                grid-template: 300px 100px 100px/repeat(4, minmax(100px,1fr));
                 grid-column-gap: 30px;
                 /*grid-row-gap:50px;
                 grid-gap: filas /columnas*/
 
-                grid-gap: 50px  100px;
+                grid-gap: 10px;
             }
 
             
