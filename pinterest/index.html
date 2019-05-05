@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pinterest</title>
+        <style>
+
+            .container{
+                display:grid;
+                grid-template-columns: repeat(auto-fill,250px);
+                grid-gap: 5px;
+                justify-content: center;
+            }
+            .item{
+                border-radius: 5px;
+                padding: 10px;
+                background: #f2f2f2;
+            }
+            img{
+                max-width: 100%;
+            }
+
+            .level1{
+                grid-row-end: span 3; 
+            }
+            .level2{
+                grid-row-end: span 2; 
+            }
+        </style>
+    </head>
+    <boyd>
+        <div class="container">
+            <div class="item level1">
+                <img src="../images/9.png" alt="">
+            </div>
+            <div class="item level2">
+                <img src="../images/5.png" alt="">
+            </div>
+            <div class="item level1">
+                <img src="../images/11.png" alt="">
+            </div>
+            <div class="item level1">
+                <img src="../images/10.png" alt="">
+            </div>
+            <div class="item level2">
+                <img src="../images/3.png" alt="">
+            </div>
+        </div>
+    </boyd>
+</html>
